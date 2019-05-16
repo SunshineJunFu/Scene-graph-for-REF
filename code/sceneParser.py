@@ -7,16 +7,9 @@
 
 import os 
 
-
-
-
 def sentence2sg(sentence='man'):
-
-
-    # print("java sceneParser \"%s\"  tmp" % "young man" )
-
+  # print("java sceneParser \"%s\"  tmp" % "young man" )
     os.system("java sceneParser \"%s\"  tmp" % sentence)
-
     with open('./tmp.txt', 'r') as f:
         lines = f.readlines()
         rl = []
@@ -71,22 +64,16 @@ def sentence2sg(sentence='man'):
                 else:
                     # no attribute or end attribute#
                     break 
-
             j = k 
-
     
         print(rl, attr)      
 
 if __name__ == '__main__':
-
     # case 1: only one node and some attributes #
     sentence2sg('blue yellow man')
-
     # case2: no node and no relationship #
     sentence2sg('man')
-
     # case3:  no attribute and have relationship #
     sentence2sg('a man with ball')       
-
-    # case3:  have attribute and have relationship #
+    # case4:  have attribute and have relationship #
     sentence2sg('a handsome man with a silver ring is holding a phone')       
