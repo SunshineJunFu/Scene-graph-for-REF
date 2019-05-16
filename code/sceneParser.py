@@ -3,10 +3,7 @@
 # @Date    : 2019-05-16 22:36:02
 # @Author  : Jun Fu (fujun@mail.ustc.edu.cn)
 
-
-
 import os 
-
 def sentence2sg(sentence='man'):
   # print("java sceneParser \"%s\"  tmp" % "young man" )
     os.system("java sceneParser \"%s\"  tmp" % sentence)
