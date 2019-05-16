@@ -34,3 +34,27 @@ System.out.println(sg.toReadableString());
 //printing the scene graph in JSON form
 //System.out.println(sg.toJSON()); 
 ```
+
+function: toReadableString()
+```java
+public String toReadableString() {
+		StringBuilder buf = new StringBuilder();
+		buf.append(String.format("%-20s%-20s%-20s%n", "source", "reln", "target"));
+		buf.append(String.format("%-20s%-20s%-20s%n", "---", "----", "---"));
+		for (SceneGraphRelation edge : this.relationList()) {
+			buf.append(String.format("%-20s%-20s%-20s%n", edge.getSource(), edge.getRelation(), edge.getTarget()));
+		}
+
+		buf.append(String.format("%n%n"));
+		buf.append(String.format("%-20s%n", "Nodes"));
+		buf.append(String.format("%-20s%n", "---"));
+
+		for (SceneGraphNode node : this.nodeList()) {
+			buf.append(String.format("%-20s%n", node));
+			for (SemanticConcept attr : node.getAttributes()) {
+				buf.append(String.format("  -%-20s%n", attr));
+			}
+		}
+		return buf.toString();
+	}
+```
