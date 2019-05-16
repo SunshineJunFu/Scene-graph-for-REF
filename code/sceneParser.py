@@ -5,7 +5,7 @@
 
 import os 
 def sentence2sg(sentence='man'):
-  # print("java sceneParser \"%s\"  tmp" % "young man" )
+    # print("java sceneParser \"%s\"  tmp" % "young man" )
     os.system("java sceneParser \"%s\"  tmp" % sentence)
     with open('./tmp.txt', 'r') as f:
         lines = f.readlines()
