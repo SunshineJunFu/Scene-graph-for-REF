@@ -7,7 +7,7 @@ public class sceneParser{
 
     RuleBasedParser parser = new RuleBasedParser();
     SceneGraph sg = parser.parse(sentence);
-    System.out.println(sg.toReadableString());
+    //System.out.println(sg.toReadableString());
     //sg.toJSONString();
     PrintWriter pw = new PrintWriter(new File(args[1]+".txt"));
     pw.println(sg.toReadableString());
