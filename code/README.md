@@ -5,7 +5,7 @@
 javac sceneParser.java
 ```
 2. run 
-```
+```bash
 java sceneParser sentence outputfilename
 ```
 
