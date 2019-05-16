@@ -1,10 +1,10 @@
 # How To Run
 
-1. compile
+## Compile
 ```bash
 javac sceneParser.java
 ```
-2. run 
+## Run 
 ```bash
 java sceneParser sentence outputfilename
 ```
