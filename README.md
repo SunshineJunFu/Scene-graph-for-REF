@@ -3,9 +3,11 @@ Scene graph
 
 ## [Stanford Scene Graph Parser](https://nlp.stanford.edu/software/scenegraph-parser.shtml)
 
-### download two files:
+### download files:
 + [CoreNLP 3.6.0](https://nlp.stanford.edu/software/stanford-corenlp-full-2015-12-09.zip)
 + [Scene Graph Parser](https://nlp.stanford.edu/projects/scenegraph/scenegraph-1.0.jar)
++ [json-simple](http://www.java2s.com/Code/Jar/j/Downloadjsonsimple111jar.htm)
+
 ### set classspath:
 ```bash
 export CLASSPATH=.:/your path/stanford-corenlp-full-2015-12-09/*:
