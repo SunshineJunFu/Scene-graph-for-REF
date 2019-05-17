@@ -34,7 +34,7 @@ SceneGraph sg = parser.parse(sentence);
 System.out.println(sg.toReadableString()); 
 
 //printing the scene graph in JSON form
-//System.out.println(sg.toJSON()); 
+System.out.println(sg.toJSON(0,null,null)); 
 ```
 
 function: toReadableString()
